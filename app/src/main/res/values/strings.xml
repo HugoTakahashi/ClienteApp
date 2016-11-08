@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Limpo</string>
+    <string name="title_activity_login">Entrar</string>
+
+    <!-- Helper -->
+    <string name="campo_obrigatorio">Campo obrigatório</string>
+
+    <!-- Url dos Serviços -->
+    <string name="UrlPrefix">http://limpo-dev.sa-east-1.elasticbeanstalk.com/api/</string>
+    <string name="UrlLoginCliente">Cliente/Login</string>
+    <string name="UrlCadastrarCliente">Cliente/Cadastrar</string>
+
+    <!-- Chamadas de Web Services -->
+    <string name="Aguarde">Aguarde</string>
+    <string name="EmProcessameto">Em processamento</string>
+
+    <!-- Strings Tela de Login -->
+    <string name="login_email">E-mail</string>
+    <string name="login_senha">Senha</string>
+    <string name="login_cadastrar">Cadastre-se</string>
+    <string name="login_entrar">Entrar</string>
+
+    <!-- Strings Tela Inicial -->
+    <string name="title_activity_tela_inicial">TelaInicial</string>
+
+    <!-- Strings Tela de Cadastro de Cliente -->
+    <string name="formulario_cliente_nome">Nome</string>
+    <string name="formulario_cliente_sobrenome">Sobrenome</string>
+    <string name="formulario_cliente_data_nascimento">Data de Nascimento</string>
+    <string name="formulario_cliente_cpf">CPF</string>
+    <string name="formulario_cliente_email">E-mail</string>
+    <string name="formulario_cliente_senha">Senha</string>
+    <string name="formulario_cliente_confirmar_senha">Confirmar Senha</string>
+    <string name="formulario_cliente_celular">Celular</string>
+    <string name="formulario_cliente_genero">Gênero</string>
+    <string name="formulario_cliente_masculino">M</string>
+    <string name="formulario_cliente_feminino">F</string>
+
+    <!-- TODO -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

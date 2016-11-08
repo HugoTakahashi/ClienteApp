@@ -1,0 +1,7 @@
+#Mon Nov 07 16:25:57 BRST 2016
+base.0=C\:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_8659384b53badbf117cfcb69200fa04cd1967984
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_1aff7cb29bfc205b0c4d36245f9f00a2b34057cf\\classes.dex
+base.1=C\:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_1aff7cb29bfc205b0c4d36245f9f00a2b34057cf
+file.0=C\:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_8659384b53badbf117cfcb69200fa04cd1967984\\classes.dex

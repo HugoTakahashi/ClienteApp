@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_a92cdabe81043dd83e3b3523a8a615d4ff3926cf.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.1.1_a92cdabe81043dd83e3b3523a8a615d4ff3926cf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="eef238d0aab678723317ccc542dd6f09ed6b1ba0">
+        <dex dex="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0a8da2b9afbd43130e4c60fbeb94ff380b7b13f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.1.1_8bf49cd3de332a8900fa87cc15429a03a9c6c420\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.1.1_090ec0d9326c4a0157b465d7171a0c9911df0a3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_090ec0d9326c4a0157b465d7171a0c9911df0a3f.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_31ca665e8090b5b03109407f179305df1e03b4f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Hugo\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\pre-dexed\debug\okio-1.6.0_31ca665e8090b5b03109407f179305df1e03b4f2.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.1.1_7a2f6c3bc0bafd8a2ce7573522fd33f5bb210a1d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.1.1_71966a3b0b23f37559770530561bb0486d08fd08\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="51c69da5549236a0b7903b5fff60df25c40442af">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1aff7cb29bfc205b0c4d36245f9f00a2b34057cf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e1bde6f8772e2d80dfe141a75827d9da344d3d95">
+        <dex dex="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_eb38088d24dec13872c4b3c653fb2aa772d0955f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Hugo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_91ec5161b01e0950ca79a1643cad5e41970cf900.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.1.1_7e3726b1cf05b93f02c65298cfd6b968de4c2bdb\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.1.1_7e3726b1cf05b93f02c65298cfd6b968de4c2bdb.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.1.1_91ec5161b01e0950ca79a1643cad5e41970cf900\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.2.0_cbb2eddd8f9604ec7ddc48b4d4abc6b0603b267d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.1.1_1f8c693224e48451f683ecfa0b8128248c2544b8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.1.1_d3b13450efd4ccfae0c2616c12a9013184cb5f59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\Hugo\Desktop\ADELSON\ADELSON\Limpo - Cliente2\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.1.1_f54c3d16aaecd9061963bb573c2772012fd1c589\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.1.1_21574858027e9605f2a660abad7787d76704707b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Hugo\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\pre-dexed\debug\okhttp-3.2.0_cbb2eddd8f9604ec7ddc48b4d4abc6b0603b267d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_8bf49cd3de332a8900fa87cc15429a03a9c6c420.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c4e463fc77e61f16d2caf672ed478a23175c1639">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8659384b53badbf117cfcb69200fa04cd1967984\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.1.1_21574858027e9605f2a660abad7787d76704707b\classes.dex" />
+    </item>
+
+</items>

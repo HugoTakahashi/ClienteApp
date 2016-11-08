@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\res\\merged\\debug\\menu\\tela_inicial.xml",
+        "source": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\src\\main\\res\\menu\\tela_inicial.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_salva_endereco.xml",
+        "source": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\src\\main\\res\\menu\\menu_salva_endereco.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_salva_cadastro1.xml",
+        "source": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\src\\main\\res\\menu\\menu_salva_cadastro1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_salva_altera_dados.xml",
+        "source": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\src\\main\\res\\menu\\menu_salva_altera_dados.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_tela_inicial_drawer.xml",
+        "source": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\src\\main\\res\\menu\\activity_tela_inicial_drawer.xml"
+    }
+]

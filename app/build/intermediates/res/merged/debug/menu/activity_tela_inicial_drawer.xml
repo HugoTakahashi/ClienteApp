@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/limpeza"
+            android:title="Solicitar Serviço" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/alterardados"
+            android:title="Alterar Dados" />
+        <item
+            android:id="@+id/nav_gallery2"
+            android:icon="@drawable/casamenu"
+            android:title="Meus Endereços" />
+        <item
+            android:id="@+id/diarias_agendadas"
+            android:icon="@drawable/calendariomenu"
+            android:title="Diárias Agendadas" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/historicomenu"
+            android:title="Histórico" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Configurações" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/logoff"
+                android:title="Logoff" />
+        </menu>
+    </item>
+
+</menu>

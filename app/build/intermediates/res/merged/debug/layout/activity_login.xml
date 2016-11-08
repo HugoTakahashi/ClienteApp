@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D62B4F"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        tools:context=".activity.LoginActivity">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="65dp"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:ems="10"
+                android:hint="@string/login_email"
+                android:inputType="textEmailAddress"
+                android:textColor="#F8F8FF"
+                android:textColorHint="#fdfcfc"
+                android:textIsSelectable="false" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:ems="10"
+                android:hint="@string/login_senha"
+                android:inputType="textPassword"
+                android:textColor="#F8F8FF"
+                android:textColorHint="#fefefe" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_botao_logar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:background="@drawable/borda_botao"
+            android:text="@string/login_entrar"
+            android:textColor="#fffefe"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/login_botao_cadastrar"
+            android:layout_width="match_parent"
+            android:background="#fffefe"
+            android:text="@string/login_cadastrar"
+            android:textColor="#c60b2d"
+            android:layout_marginTop="80dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</ScrollView>
