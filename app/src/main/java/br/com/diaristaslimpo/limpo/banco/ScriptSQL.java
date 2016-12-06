@@ -7,10 +7,10 @@ import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
 
-import br.com.diaristaslimpo.limpo.model.Cliente;
-import br.com.diaristaslimpo.limpo.model.Endereco;
-import br.com.diaristaslimpo.limpo.model.ListaDiarista;
-import br.com.diaristaslimpo.limpo.model.Orcamento;
+import br.com.diaristaslimpo.limpo.to.Cliente;
+import br.com.diaristaslimpo.limpo.to.Endereco;
+import br.com.diaristaslimpo.limpo.to.ListaDiarista;
+import br.com.diaristaslimpo.limpo.to.Orcamento;
 import br.com.diaristaslimpo.limpo.R;
 
 /**
@@ -31,7 +31,7 @@ public class ScriptSQL {
         conn.insertOrThrow("login", null, values);
     }
 
-    public void inserirCliente(String idCliente, String nome, String sobrenome, String datanasc,int cpf,String email,int celular,String genero) {
+    public void inserirCliente(String idCliente, String nome, String sobrenome, String datanasc, String cpf, String email, int celular, String genero) {
         ContentValues values = new ContentValues();
         values.put("IdCliente", idCliente);
         values.put("Nome", nome);
@@ -44,7 +44,7 @@ public class ScriptSQL {
         conn.insertOrThrow("cliente", null, values);
     }
 
-    public void alterarCliente(String id, String nome, String sobrenome, String datanasc,int cpf,String email,int celular) {
+    public void alterarCliente(String id, String nome, String sobrenome, String datanasc, String cpf, String email, int celular) {
 
 
         ContentValues values = new ContentValues();
@@ -54,7 +54,7 @@ public class ScriptSQL {
         values.put("Cpf",cpf);
         values.put("Email",email);
         values.put("Celular",celular);
-        conn.update("cliente", values, "idCliente>?", new String[]{id});
+        conn.update("cliente", values, "idCliente=?", new String[]{id});
 
     }
 
@@ -76,21 +76,23 @@ public class ScriptSQL {
 
     }
 
-    public void alterarEndereco(String IdEndereco,String nomeEndereco,int cep, String endereco, int numero,String complemento,String bairro,String cidade,String estado, String pontoreferencia) {
-
-
+    public void alterarEndereco(String IdEndereco,String nomeEndereco,String cep, String endereco,
+                                int numero,String complemento,String bairro,String cidade, String pontoreferencia) {
         ContentValues values = new ContentValues();
         values.put("IdentificacaoEndereco", nomeEndereco);
         values.put("Cep", cep);
-        values.put("Endereco", endereco);
+        values.put("Logradouro", endereco);
         values.put("Numero",numero);
         values.put("Complemento",complemento);
         values.put("Bairro",bairro);
         values.put("Cidade",cidade);
-        values.put("Estado",estado);
         values.put("Pontoreferencia",pontoreferencia);
-        conn.update("endereco", values, "IdEndereco>?", new String[]{IdEndereco});
+        conn.update("endereco", values, "IdEndereco=?", new String[]{IdEndereco});
 
+    }
+
+    public void excluirEndereco(String idEndereco){
+        conn.delete("endereco","idEndereco=?", new String[]{idEndereco});
     }
 
     public int isLogin(Context context) {
@@ -121,9 +123,9 @@ public class ScriptSQL {
     }
 
     public void logof() {
-        conn.delete("Login", null, null);
-        conn.delete("Cliente",null,null);
-        conn.delete("Endereco",null,null);
+        conn.delete("login", null, null);
+        conn.delete("cliente",null,null);
+        conn.delete("endereco",null,null);
         limpaListaDiarista();
     }
 
@@ -193,10 +195,10 @@ public class ScriptSQL {
 
     }
 
-    public ArrayList<Cliente> selectCliente(){
+    public ArrayList<Cliente> selectCliente(String idCliente){
         ArrayList<Cliente> array = new ArrayList<Cliente>();
         Cliente obj = new Cliente();
-        Cursor cursor = conn.rawQuery("select * from cliente",null);
+        Cursor cursor = conn.rawQuery("select * from cliente where IdCliente=" + idCliente ,null);
         if(cursor.getCount() >0){
             cursor.moveToFirst();
 
@@ -205,7 +207,7 @@ public class ScriptSQL {
                 obj.setNome(cursor.getString(cursor.getColumnIndex("Nome")));
                 obj.setSobrenome(cursor.getString(cursor.getColumnIndex("Sobrenome")));
                 obj.setDataNascimento(cursor.getString(cursor.getColumnIndex("DataNascimento")));
-                obj.setCpf(cursor.getInt(cursor.getColumnIndex("Cpf")));
+                obj.setCpf(cursor.getString(cursor.getColumnIndex("Cpf")));
                 obj.setEmail(cursor.getString(cursor.getColumnIndex("Email")));
                 obj.setCelular(cursor.getInt(cursor.getColumnIndex("Celular")));
                 obj.setGenero(cursor.getString(cursor.getColumnIndex("Genero")));

@@ -12,12 +12,11 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import br.com.diaristaslimpo.limpo.model.Endereco;
+import br.com.diaristaslimpo.limpo.to.Endereco;
 import br.com.diaristaslimpo.limpo.R;
 import br.com.diaristaslimpo.limpo.banco.DataBase;
 import br.com.diaristaslimpo.limpo.banco.ScriptSQL;
 import br.com.diaristaslimpo.limpo.adapter.EnderecoAdapter;
-import br.com.diaristaslimpo.limpo.telas.TelaCadastroEndereco;
 
 public class SelecionarEnderecoActivity extends AppCompatActivity implements View.OnClickListener {
     private ListView lst;
@@ -27,13 +26,18 @@ public class SelecionarEnderecoActivity extends AppCompatActivity implements Vie
     private EnderecoAdapter adapterListView;
     private DataBase dataBase;
     private SQLiteDatabase conn;
-    Activity at;
+    private static SelecionarEnderecoActivity activity;
+
+    public static SelecionarEnderecoActivity getInstance(){
+        return activity;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selecionar_endereco);
-        at=this;
+
+        activity = this;
 
         lst = (ListView) findViewById(R.id.lstEndereco);
         btn = (Button) findViewById(R.id.btEndereco);
@@ -58,12 +62,13 @@ public class SelecionarEnderecoActivity extends AppCompatActivity implements Vie
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
 
-                Intent intent = new Intent(at, SelecionarServicoActivity.class);
-                intent.putExtra("ENDERECO", itens.get(position).getEndereco());
+                Intent intent = new Intent(SelecionarEnderecoActivity.this, SelecionarServicoActivity.class);
+                intent.putExtra("ENDERECO", itens.get(position).getEndereco() +
+                    ", " + itens.get(position).getNumero() +
+                    " - " + itens.get(position).getBairro()+
+                    " - " + itens.get(position).getCidade());
                 intent.putExtra("idendereco", itens.get(position).getIdEndereco());
                 startActivityForResult(intent,0);
-
-
             }
         });
     }
@@ -71,7 +76,7 @@ public class SelecionarEnderecoActivity extends AppCompatActivity implements Vie
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this,TelaCadastroEndereco.class);
+        Intent intent = new Intent(this,CadastroEnderecoActivity.class);
         intent.putExtra("chave","0");
         startActivity(intent);
         finish();

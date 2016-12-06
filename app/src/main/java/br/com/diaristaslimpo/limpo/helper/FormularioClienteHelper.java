@@ -10,6 +10,7 @@ import br.com.diaristaslimpo.limpo.util.DateUtil;
 import br.com.diaristaslimpo.limpo.util.MaskUtil;
 
 import static android.R.attr.checked;
+import static android.R.attr.supportsAssist;
 
 /**
  * Created by Hugo on 01/11/2016.
@@ -65,6 +66,8 @@ public class FormularioClienteHelper extends BaseHelper {
     }
 
     public boolean validarCamposObrigatorios(){
+        super.setIsValid(true);
+
         validarPreenchimentoCampoObrigatorio(nome);
         validarPreenchimentoCampoObrigatorio(sobrenome);
         validarPreenchimentoCampoObrigatorio(dataNascimento);

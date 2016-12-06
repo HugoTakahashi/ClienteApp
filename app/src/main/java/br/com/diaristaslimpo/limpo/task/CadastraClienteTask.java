@@ -16,7 +16,6 @@ import br.com.diaristaslimpo.limpo.banco.DataBase;
 import br.com.diaristaslimpo.limpo.banco.ScriptSQL;
 import br.com.diaristaslimpo.limpo.util.MessageBox;
 import br.com.diaristaslimpo.limpo.activity.LoginActivity;
-import br.com.diaristaslimpo.limpo.webservice.ConectaWS;
 
 /**
  * Created by user on 24/04/2016.
@@ -35,8 +34,8 @@ public class CadastraClienteTask extends AsyncTask<String, Void, String> { // li
     @Override
     protected void onPreExecute() {
         dialog = ProgressDialog.show(context,
-                context.getResources().getString(R.string.Aguarde),
-                context.getResources().getString(R.string.EmProcessameto),
+                context.getResources().getString(R.string.aguarde),
+                context.getResources().getString(R.string.em_processamento),
                 true,
                 true);
     }
@@ -48,8 +47,8 @@ public class CadastraClienteTask extends AsyncTask<String, Void, String> { // li
             String json = params[0];
 
             requester = new ConectaWS();
-            String url = context.getResources().getString(R.string.UrlPrefix) + context.getResources().getString(R.string.UrlCadastrarCliente);
-            final JSONObject recebe = requester.conexao(url, json);
+            String url = context.getResources().getString(R.string.url_prefix) + context.getResources().getString(R.string.url_cadastrar_cliente);
+            final JSONObject recebe = requester.doPostJsonObject(url, json);
 
             dataBase = new DataBase(context);
             conn = dataBase.getWritableDatabase();
@@ -59,8 +58,8 @@ public class CadastraClienteTask extends AsyncTask<String, Void, String> { // li
                     recebe.getString("Id"),
                     recebe.getString("Nome"),
                     recebe.getString("Sobrenome"),
-                    recebe.getString("DataNascimento"),//verificar se web service está pronto
-                    recebe.getInt("Cpf"),
+                    recebe.getString("DataNascimentoFormatada"),//verificar se web service está pronto
+                    recebe.getString("Cpf"),
                     recebe.getString("Email"),
                     Integer.parseInt(recebe.getString("Celular")),
                     recebe.getString("Genero"));

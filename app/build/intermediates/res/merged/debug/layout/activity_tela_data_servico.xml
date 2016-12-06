@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/activity_vertical_margin"
-    tools:context=".telas.TelaSDataServico"
+    tools:context=".activity.DataServicoActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -19,7 +19,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="date"
+                android:inputType="none"
+                android:editable="false"
                 android:ems="10"
                 android:textColor="#c60b2d"
                 android:hint="Data da Diária"
@@ -29,18 +30,11 @@
                 android:layout_alignParentStart="true" />
         </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/dataFake"
-            android:visibility="invisible"/>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Horário de Inicio"
-            android:layout_marginTop="20dp"
             android:id="@+id/textView" />
 
         <Spinner
@@ -77,21 +71,26 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="Valor da Diária:"
+            android:text="Valor da Diária:   R$ "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/textView2" />
         <TextView
-            android:text="R$ 190,00 "
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="40dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/textView3" />
+            android:id="@+id/valordadiaria" />
     </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataFake"
+        android:visibility="invisible"/>
 
     <RelativeLayout
         android:orientation="vertical"

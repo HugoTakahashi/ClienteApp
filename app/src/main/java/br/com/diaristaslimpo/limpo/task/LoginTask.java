@@ -9,13 +9,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.IOException;
-import br.com.diaristaslimpo.limpo.model.Endereco;
+import br.com.diaristaslimpo.limpo.to.Endereco;
 import br.com.diaristaslimpo.limpo.R;
 import br.com.diaristaslimpo.limpo.banco.DataBase;
 import br.com.diaristaslimpo.limpo.banco.ScriptSQL;
 import br.com.diaristaslimpo.limpo.util.MessageBox;
 import br.com.diaristaslimpo.limpo.activity.InicialActivity;
-import br.com.diaristaslimpo.limpo.webservice.ConectaWS;
 
 /**
  * Created by user on 24/04/2016.
@@ -25,7 +24,7 @@ public class LoginTask extends AsyncTask<String, Void, String> {
     private Context context;
     private ProgressDialog dialog;
     private ConectaWS requester = new ConectaWS();
-    private String pfv, url, id, login, ativo, idCliente;
+    private String  url, id, login, ativo, idCliente;
     private DataBase dataBase;
     private SQLiteDatabase conn;
     private String json;
@@ -37,8 +36,8 @@ public class LoginTask extends AsyncTask<String, Void, String> {
     @Override
     protected void onPreExecute() {
         dialog = ProgressDialog.show(context, 
-                context.getResources().getString(R.string.Aguarde),
-                context.getResources().getString(R.string.EmProcessameto), 
+                context.getResources().getString(R.string.aguarde),
+                context.getResources().getString(R.string.em_processamento),
                 true, 
                 true);
     }
@@ -48,8 +47,8 @@ public class LoginTask extends AsyncTask<String, Void, String> {
         String resp = null;
         try {
             json = params[0];
-            url = context.getResources().getString(R.string.UrlPrefix) + context.getResources().getString(R.string.UrlLoginCliente);
-            final JSONObject response = requester.conexao(url, json);
+            url = context.getResources().getString(R.string.url_prefix) + context.getResources().getString(R.string.url_login_cliente);
+            final JSONObject response = requester.doPostJsonObject(url, json);
 
             try {
                 if (response.getString("Message") != null) {
@@ -74,8 +73,8 @@ public class LoginTask extends AsyncTask<String, Void, String> {
                         response.getString("Id"),
                         response.getString("Nome"),
                         response.getString("Sobrenome"),
-                        response.getString("DataNascimento"),
-                        response.getInt("Cpf"),
+                        response.getString("DataNascimentoFormatada"),
+                        response.getString("Cpf"),
                         response.getString("Email"),
                         Integer.parseInt(response.getString("Celular")),
                         response.getString("Genero"));
@@ -84,7 +83,7 @@ public class LoginTask extends AsyncTask<String, Void, String> {
             } else {
 
             }
-            final JSONArray recebe2 = requester.getJsonArray("http://limpo-dev.sa-east-1.elasticbeanstalk.com/api/ClienteEndereco/Listar", idCliente);
+            final JSONArray recebe2 = requester.doGetJsonArray("http://limpo-dev.sa-east-1.elasticbeanstalk.com/api/ClienteEndereco/Listar", idCliente);
             ScriptSQL scriptSQL = new ScriptSQL(conn);
             for(int i=0;i < recebe2.length();i++) {
                 Endereco obj = new Endereco();
@@ -105,7 +104,7 @@ public class LoginTask extends AsyncTask<String, Void, String> {
         } catch (IOException e) {
             e.printStackTrace();
         } catch (JSONException e) {
-            resp = "Usuario ou senha invalido";
+            resp = "Usuário e/ou senha inválido(s)";
             e.printStackTrace();
         }
         return resp;
@@ -120,7 +119,7 @@ public class LoginTask extends AsyncTask<String, Void, String> {
         } else {
             dialog.dismiss();
             onCancelled();
-            MessageBox.show(context, "Erro ao efetuar o Login", resposta);
+            MessageBox.show(context, "Erro", resposta);
         }
     }
 }

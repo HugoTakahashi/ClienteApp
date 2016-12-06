@@ -6,14 +6,12 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.TextView;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import br.com.diaristaslimpo.limpo.R;
-import br.com.diaristaslimpo.limpo.model.Endereco;
+import br.com.diaristaslimpo.limpo.to.Endereco;
 import br.com.diaristaslimpo.limpo.util.MessageBox;
-import br.com.diaristaslimpo.limpo.webservice.ConectaWS;
 
 /**
  * Created by user on 24/04/2016.
@@ -33,8 +31,8 @@ public class BuscarEnderecoPorCepTask extends AsyncTask<String, Void, Boolean> {
     @Override
     protected void onPreExecute() {
         dialog = ProgressDialog.show(context, 
-                context.getResources().getString(R.string.Aguarde),
-                context.getResources().getString(R.string.EmProcessameto), 
+                context.getResources().getString(R.string.aguarde),
+                context.getResources().getString(R.string.em_processamento),
                 true, 
                 true);
     }
@@ -44,7 +42,7 @@ public class BuscarEnderecoPorCepTask extends AsyncTask<String, Void, Boolean> {
         try {
             cep = params[0];
 
-            final JSONObject response = requester.getJsonObject("http://limpo-dev.sa-east-1.elasticbeanstalk.com/api/CorreiosApi/BuscarEndereco", cep);
+            final JSONObject response = requester.doGetJsonObject("http://limpo-dev.sa-east-1.elasticbeanstalk.com/api/CorreiosApi/BuscarEndereco", cep);
 
             obj.setEndereco(response.get("endereco").toString());
             obj.setBairro(response.get("bairro").toString());

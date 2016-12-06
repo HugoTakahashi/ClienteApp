@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.RadioButton;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -79,22 +81,21 @@ public class FormularioClienteActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.menu_enviar_cadastro:
-
                 if(helper.validarCamposObrigatorios()){
                     formularioClienteTo = helper.getFormularioClienteTo();
 
                     if (!(formularioClienteTo.getSenha().equals(formularioClienteTo.getConfirmacaoSenha()))){
-                        MessageBox.showAlert(this,"Senha não Confere","verificar se as senhas informadas são iguais");
+                        MessageBox.showAlert(this,"Atenção","Campos de senha não estão iguais");
                         break;
                     }
 
                     if(!ValidationUtil.isValidCPF(formularioClienteTo.getCpf())){
-                        MessageBox.showAlert(this,"CPF inválido","Burro não existe divisão por 0");
+                        MessageBox.showAlert(this,"Atenção","CPF inválido");
                         break;
                     }
 
                     if(!ValidationUtil.isValidEmail(formularioClienteTo.getEmail())){
-                        MessageBox.showAlert(this,"E-mail inválido","Escreve o email certo ai");
+                        MessageBox.showAlert(this,"Atenção","E-mail inválido");
                         break;
                     }
 

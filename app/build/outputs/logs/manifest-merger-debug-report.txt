@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:2:1-55:12
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:2:1-97:12
 	package
 		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml
@@ -34,108 +34,216 @@ ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidMan
 	android:name
 		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:10:22-71
 application
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:12:5-53:19
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:12:5-95:19
+MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:17:9-41
 	android:supportsRtl
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:18:9-35
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:14:9-44
 	android:allowBackup
 		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:13:9-35
 	android:icon
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:16:9-43
+	android:largeHeap
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:15:9-33
 	android:theme
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:19:9-40
 activity#br.com.diaristaslimpo.limpo.activity.LoginActivity
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:18:9-26:20
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:20:9-29:20
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:23:13-49
 	android:theme
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:20:13-42
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:22:13-42
 	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:19:13-51
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:21:13-51
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:27:27-74
 activity#br.com.diaristaslimpo.limpo.activity.SelecionarEnderecoActivity
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:27:9-73
-	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:27:19-70
-activity#br.com.diaristaslimpo.limpo.activity.SelecionarServicoActivity
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:28:9-72
-	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:28:19-69
-activity#br.com.diaristaslimpo.limpo.telas.TelaSDataServico
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:29:9-60
-	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:29:19-57
-activity#br.com.diaristaslimpo.limpo.telas.TelaSExibeDiarista
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:30:9-62
-	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:30:19-59
-activity#br.com.diaristaslimpo.limpo.telas.TelaSConfirmacaoServico
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:31:9-67
-	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:31:19-64
-activity#br.com.diaristaslimpo.limpo.telas.TelaDadosPessoais
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:32:9-61
-	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:32:19-58
-activity#br.com.diaristaslimpo.limpo.activity.InicialActivity
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:33:9-35:59
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:30:9-32:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:32:13-49
 	android:label
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:34:13-64
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:31:13-48
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:30:19-70
+activity#br.com.diaristaslimpo.limpo.activity.SelecionarServicoActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:33:9-35:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:35:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:34:13-50
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:33:19-69
+activity#br.com.diaristaslimpo.limpo.activity.DataServicoActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:36:9-38:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:38:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:37:13-50
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:36:19-63
+activity#br.com.diaristaslimpo.limpo.activity.ExibeDiaristaActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:39:9-41:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:41:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:40:13-29
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:39:19-65
+activity#br.com.diaristaslimpo.limpo.activity.ListaDiaristaActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:42:9-44:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:44:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:43:13-53
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:42:19-65
+activity#br.com.diaristaslimpo.limpo.activity.ConfirmacaoServicoActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:45:9-47:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:47:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:46:13-50
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:45:19-70
+activity#br.com.diaristaslimpo.limpo.activity.DadosPessoaisActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:48:9-50:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:50:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:49:13-42
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:48:19-65
+activity#br.com.diaristaslimpo.limpo.activity.InicialActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:51:9-54:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:54:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:52:13-35
 	android:theme
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:35:13-56
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:53:13-56
 	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:33:19-59
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:51:19-59
 activity#br.com.diaristaslimpo.limpo.activity.FormularioClienteActivity
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:36:9-72
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:55:9-57:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:57:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:56:13-44
 	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:36:19-69
-activity#br.com.diaristaslimpo.limpo.telas.TelaCadastroEndereco
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:37:9-64
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:55:19-69
+activity#br.com.diaristaslimpo.limpo.activity.CadastroEnderecoActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:58:9-60:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:60:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:59:13-49
 	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:37:19-61
-activity#br.com.diaristaslimpo.limpo.telas.Tela_Historico
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:38:9-58
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:58:19-68
+activity#br.com.diaristaslimpo.limpo.activity.HistoricoActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:61:9-63:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:63:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:62:13-38
 	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:38:19-55
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:61:19-61
+activity#br.com.diaristaslimpo.limpo.activity.ListaDiariasAgendadasActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:64:9-66:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:66:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:65:13-46
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:64:19-73
+activity#br.com.diaristaslimpo.limpo.activity.DetalheDiariaAgendadaActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:67:9-69:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:69:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:68:13-44
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:67:19-73
+activity#br.com.diaristaslimpo.limpo.activity.DetalheOrcamentoActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:70:9-72:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:72:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:71:13-29
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:70:19-68
+activity#br.com.diaristaslimpo.limpo.activity.MeusEnderecosActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:73:9-75:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:75:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:74:13-47
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:73:19-65
+activity#br.com.diaristaslimpo.limpo.activity.ConfiguracaoActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:76:9-78:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:78:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:77:13-41
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:76:19-64
+activity#br.com.diaristaslimpo.limpo.activity.ListaHistoricoActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:79:9-81:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:81:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:80:13-49
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:79:19-66
+activity#br.com.diaristaslimpo.limpo.activity.DetalheHistoricoActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:82:9-84:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:84:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:83:13-29
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:82:19-68
+activity#br.com.diaristaslimpo.limpo.activity.AvaliacaoActivity
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:85:9-87:51
+	android:screenOrientation
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:87:13-49
+	android:label
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:86:13-29
+	android:name
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:85:19-61
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:44:9-46:69
+ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:92:9-94:69
 	android:value
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:46:13-66
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:94:13-66
 	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:45:13-58
-activity#br.com.diaristaslimpo.limpo.telas.Tela_DetalheOrcamento
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:48:9-65
-	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:48:19-62
-activity#br.com.diaristaslimpo.limpo.telas.Tela_MeusEnderecos
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:49:9-62
-	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:49:19-59
-activity#br.com.diaristaslimpo.limpo.telas.Tela_Configuracao
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:50:9-61
-	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:50:19-58
-activity#br.com.diaristaslimpo.limpo.telas.ActBaixaDiaristas
-ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:51:9-61
-	android:name
-		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:51:19-58
+		ADDED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml:93:13-58
 uses-sdk
 INJECTED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:design:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Hugo\Desktop\TCC-App\Limpo - Cliente\app\src\main\AndroidManifest.xml

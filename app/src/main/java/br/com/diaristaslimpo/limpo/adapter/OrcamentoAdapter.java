@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import br.com.diaristaslimpo.limpo.model.Orcamento;
+import br.com.diaristaslimpo.limpo.to.Orcamento;
 import br.com.diaristaslimpo.limpo.R;
 
 public class OrcamentoAdapter extends BaseAdapter{

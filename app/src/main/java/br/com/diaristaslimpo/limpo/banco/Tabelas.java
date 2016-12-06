@@ -13,14 +13,6 @@ public class Tabelas {
         sqlBuilder.append("idUsuario integer,");
         sqlBuilder.append("Login TEXT,");
         sqlBuilder.append("logado integer ");
-        //sqlBuilder.append("tipotelefone varchar(1), ");
-       //sqlBuilder.append("email varchar(255), ");
-       // sqlBuilder.append("tipoemail varchar(1), ");
-       // sqlBuilder.append("endereco varchar(255), ");
-       // sqlBuilder.append("tipoendereco varchar(1), ");
-        //sqlBuilder.append("datalogon date, ");
-        //sqlBuilder.append("tipodatasespeciais varchar(1), ");
-        //sqlBuilder.append("grupos varchar(255) ");
         sqlBuilder.append(");");
 
         return sqlBuilder.toString();
@@ -34,7 +26,7 @@ public class Tabelas {
         sqlBuilder.append("Nome TEXT,");
         sqlBuilder.append("Sobrenome TEXT,");
         sqlBuilder.append("DataNascimento TEXT,");
-        sqlBuilder.append("Cpf INTEGER,");
+        sqlBuilder.append("Cpf TEXT,");
         sqlBuilder.append("Email TEXT,");
         sqlBuilder.append("Celular INTEGER,");
         sqlBuilder.append("Genero TEXT");
@@ -52,7 +44,7 @@ public class Tabelas {
         sqlBuilder.append("IdCliente integer,");
         sqlBuilder.append("IdEndereco integer,");
         sqlBuilder.append("IdentificacaoEndereco TEXT,");
-        sqlBuilder.append("Cep integer,");
+        sqlBuilder.append("Cep TEXT,");
         sqlBuilder.append("Logradouro TEXT,");
         sqlBuilder.append("Numero integer,");
         sqlBuilder.append("Complemento TEXT,");

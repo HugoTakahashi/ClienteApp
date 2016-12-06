@@ -15,10 +15,10 @@ public class GeraJson {
         JSONObject json = new JSONObject();
 
         try {
-            json.put("IdCliente",id);
+            json.put("Id",id);
             json.put("Nome", nome);
             json.put("Sobrenome", sobrenome);
-            json.put("DataNasc", datanasc);
+            json.put("DataNascimento", datanasc);
             json.put("CPF", cpf);
             json.put("Email", email);
             json.put("Celular", celular);
@@ -32,22 +32,20 @@ public class GeraJson {
 
     }
 
-    public String jsonCadastraEndereço(int IdCliente, String idEndereco, String nomeEndereco, String cep, String logradouro, String numero, String complemento, String bairro, String cidade, String pontoReferencia) {
+    public String jsonCadastraEndereco(int IdCliente, String idEndereco, String nomeEndereco, String cep, String logradouro, String numero, String complemento, String bairro, String cidade, String pontoReferencia) {
         JSONObject json = new JSONObject();
 
         try {
             json.put("IdCliente",IdCliente);
-            json.put("IdEndereco", idEndereco);
+            json.put("Id", idEndereco);
             json.put("IdentificacaoEndereco", nomeEndereco);
-            json.put("Cep", cep);
+            json.put("Cep", MaskUtil.unmask(cep));
             json.put("Logradouro", logradouro);
             json.put("Numero", numero);
             json.put("Complemento", complemento);
             json.put("Bairro", bairro);
             json.put("Cidade", cidade);
             json.put("PontoReferencia", pontoReferencia);
-
-
 
         } catch (JSONException e1) {
             e1.printStackTrace();
@@ -76,7 +74,7 @@ public class GeraJson {
 
     }
 
-    public String jsonEnviaSolicitacao(ArrayList<Integer> idDiarista, String idEndereco, int limpeza, int passarroupa, int lavarroupa, String dataServico, String outros, String diaria, String horainicio) {
+    public String jsonEnviaSolicitacao(ArrayList<Integer> idDiarista, String idEndereco, int limpeza, int passarroupa, int lavarroupa, String dataServico, String outros, boolean diaria, String horainicio, String valorDiaria) {
         JSONObject json = new JSONObject();
         JSONArray jsonArray = new JSONArray(idDiarista);
 
@@ -89,6 +87,7 @@ public class GeraJson {
             json.put("LavaRoupa",lavarroupa);
             json.put("Data",dataServico + " " + horainicio);
             json.put("Observacao",outros);
+            json.put("Valor", valorDiaria.replace(",", "."));
         } catch (JSONException e1) {
             e1.printStackTrace();
         }
@@ -110,4 +109,22 @@ public class GeraJson {
 
     }
 
+    public String jsonEnviaAvaliacao(String nota, String obs, String idSolicitacao, String idDiarista, String idCliente) {
+        JSONObject json = new JSONObject();
+
+        try {
+            json.put("IdCliente",idCliente);
+            json.put("IdDiarista",idDiarista);
+            json.put("IdSolicitacao",idSolicitacao);
+            json.put("Observacao",obs);
+            json.put("Nota",nota);
+
+
+        } catch (JSONException e1) {
+            e1.printStackTrace();
+        }
+
+        return String.valueOf(json);
+
+    }
 }

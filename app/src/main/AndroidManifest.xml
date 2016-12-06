@@ -11,32 +11,80 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:icon="@mipmap/logocliente"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".activity.LoginActivity"
-            android:theme="@style/SemBar">
+            android:theme="@style/SemBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.SelecionarEnderecoActivity" />
-        <activity android:name=".activity.SelecionarServicoActivity" />
-        <activity android:name=".telas.TelaSDataServico" />
-        <activity android:name=".telas.TelaSExibeDiarista" />
-        <activity android:name=".telas.TelaSConfirmacaoServico" />
-        <activity android:name=".telas.TelaDadosPessoais" />
+        <activity android:name=".activity.SelecionarEnderecoActivity"
+            android:label="Escolha um Endereço"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.SelecionarServicoActivity"
+            android:label="Escolha o que precisa"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DataServicoActivity"
+            android:label="Escolha a Data e Hora"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ExibeDiaristaActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ListaDiaristaActivity"
+            android:label="Escolha a(s) Diarista(s)"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ConfirmacaoServicoActivity"
+            android:label="Confirmação de Diária"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DadosPessoaisActivity"
+            android:label="Alterar Dados"
+            android:screenOrientation="portrait"/>
         <activity android:name=".activity.InicialActivity"
-            android:label="@string/title_activity_tela_inicial"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.FormularioClienteActivity" />
-        <activity android:name=".telas.TelaCadastroEndereco" />
-        <activity android:name=".telas.Tela_Historico" />
-
+            android:label="Limpo!"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.FormularioClienteActivity"
+            android:label="Cadastro Básico"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.CadastroEnderecoActivity"
+            android:label="Cadastro de Endereço"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.HistoricoActivity"
+            android:label="Histórico"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ListaDiariasAgendadasActivity"
+            android:label="Diarias Agendadas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DetalheDiariaAgendadaActivity"
+            android:label="Diaria Agendada"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DetalheOrcamentoActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MeusEnderecosActivity"
+            android:label="Meu(s) Endereço(s)"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ConfiguracaoActivity"
+            android:label="Configuração"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ListaHistoricoActivity"
+            android:label="Histórico de Diárias"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DetalheHistoricoActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.AvaliacaoActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -44,12 +92,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <activity android:name=".telas.Tela_DetalheOrcamento" />
-        <activity android:name=".telas.Tela_MeusEnderecos" />
-        <activity android:name=".telas.Tela_Configuracao" />
-        <activity android:name=".telas.ActBaixaDiaristas" />
-
     </application>
 
 </manifest>

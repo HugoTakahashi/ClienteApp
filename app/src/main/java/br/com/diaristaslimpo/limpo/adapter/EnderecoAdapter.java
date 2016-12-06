@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import br.com.diaristaslimpo.limpo.model.Endereco;
+import br.com.diaristaslimpo.limpo.to.Endereco;
 import br.com.diaristaslimpo.limpo.R;
 
 /**

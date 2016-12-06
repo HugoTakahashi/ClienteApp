@@ -7,6 +7,10 @@
             android:icon="@drawable/limpeza"
             android:title="Solicitar Serviço" />
         <item
+            android:id="@+id/diarias_agendadas"
+            android:icon="@drawable/calendariomenu"
+            android:title="Diárias Agendadas" />
+        <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/alterardados"
             android:title="Alterar Dados" />
@@ -15,10 +19,6 @@
             android:icon="@drawable/casamenu"
             android:title="Meus Endereços" />
         <item
-            android:id="@+id/diarias_agendadas"
-            android:icon="@drawable/calendariomenu"
-            android:title="Diárias Agendadas" />
-        <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/historicomenu"
             android:title="Histórico" />
@@ -26,15 +26,9 @@
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
             android:title="Configurações" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/logoff"
+            android:title="Sair" />
     </group>
-
-    <item android:title="">
-        <menu>
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/logoff"
-                android:title="Logoff" />
-        </menu>
-    </item>
-
 </menu>

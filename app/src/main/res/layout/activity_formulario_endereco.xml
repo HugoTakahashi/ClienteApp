@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/activity_vertical_margin"
-        tools:context="br.com.diaristaslimpo.limpo.telas.TelaCadastroEndereco"
+        tools:context="br.com.diaristaslimpo.limpo.activity.CadastroEnderecoActivity"
         android:orientation="vertical"
         android:background="#F8F8FF">
 
@@ -38,38 +38,16 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_endereco"
+            android:id="@+id/input_layout_cidade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/endereco_endereco"
-                android:hint="Endereço"
+                android:hint="Cidade"
+                android:id="@+id/endereco_cidade"
                 android:layout_weight="1"
                 android:enabled="false"/>
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_numero"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:layout_width="86dp"
-                android:layout_height="wrap_content"
-                android:hint="Número"
-                android:id="@+id/endereco_numero" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_complemento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Complemento"
-                android:id="@+id/endereco_complemento" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -87,16 +65,38 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_cidade"
+            android:id="@+id/input_layout_endereco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Cidade"
-                android:id="@+id/endereco_cidade"
+                android:id="@+id/endereco_endereco"
+                android:hint="Endereço"
                 android:layout_weight="1"
                 android:enabled="false"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número"
+                android:id="@+id/endereco_numero" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_complemento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complemento"
+                android:id="@+id/endereco_complemento" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -109,6 +109,12 @@
                 android:hint="Ponto de Referência"
                 android:id="@+id/endereco_pontoreferencia" />
         </android.support.design.widget.TextInputLayout>
-
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Excluir Endereço"
+            android:background="#c60b2d"
+            android:textColor="#fffefe"
+            android:id="@+id/btExcluiEndereco" />
     </LinearLayout>
 </ScrollView>

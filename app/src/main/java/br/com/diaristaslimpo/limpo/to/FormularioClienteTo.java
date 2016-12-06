@@ -11,6 +11,7 @@ import br.com.diaristaslimpo.limpo.util.MaskUtil;
 
 public class FormularioClienteTo {
     private String nome, sobrenome, dataNascimento, cpf, email, senha, confirmacaoSenha, celular, genero;
+    private int id;
 
     public FormularioClienteTo(){
 
@@ -26,6 +27,14 @@ public class FormularioClienteTo {
         setConfirmacaoSenha(confirmacaoSenha);
         setCelular(celular);
         setGenero(genero);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {

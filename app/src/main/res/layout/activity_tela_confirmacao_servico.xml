@@ -3,11 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.com.diaristaslimpo.limpo.telas.Tela_DetalheOrcamento"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="br.com.diaristaslimpo.limpo.activity.DetalheOrcamentoActivity"
     android:orientation="vertical">
 
     <TextView
@@ -23,6 +20,22 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/txtServSolicitado"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Valor da Diaria"
+        android:textColor="#000"
+        android:id="@+id/textView40" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txtvalorDiaria"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="15dp" />
 
@@ -74,13 +87,20 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="15dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OK"
-        android:background="#c60b2d"
-        android:textColor="#fffefe"
-        android:id="@+id/bt_ok"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginTop="20dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:background="#c60b2d"
+            android:textColor="#fffefe"
+            android:id="@+id/bt_ok"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
 </LinearLayout>

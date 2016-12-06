@@ -8,9 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import br.com.diaristaslimpo.limpo.R;
-import br.com.diaristaslimpo.limpo.telas.TelaSDataServico;
 import br.com.diaristaslimpo.limpo.util.MessageBox;
 
 public class SelecionarServicoActivity extends AppCompatActivity {
@@ -22,11 +22,19 @@ public class SelecionarServicoActivity extends AppCompatActivity {
     private String end, servs, idEndereco;
     private int limpeza,passarroupa,lavarroupa;
     private int ativo,inativo;
+    private static SelecionarServicoActivity activity;
+
+    public static SelecionarServicoActivity getInstance(){
+        return activity;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selecionar_servico);
+
+        activity = this;
+
         limpeza= 0;
         passarroupa=0;
         lavarroupa=0;
@@ -37,7 +45,6 @@ public class SelecionarServicoActivity extends AppCompatActivity {
         Bundle bundle = intent.getExtras();
         end = bundle.getString("ENDERECO");
         idEndereco = bundle.getString("idendereco");
-
 
         btlimpeza = (ImageButton) findViewById(R.id.bt_limpeza);
         btlimpeza.setOnClickListener(new View.OnClickListener() {
@@ -88,12 +95,12 @@ public class SelecionarServicoActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(limpeza == 0 && passarroupa == 0 && lavarroupa == 0){
-                    MessageBox.showAlert(SelecionarServicoActivity.this,"Nenhum serviço selecionado","Selecione um ou mais serviços");
+                    MessageBox.show(SelecionarServicoActivity.this,"Atenção","Selecione um ou mais serviços");
                     return;
                 }
 
                 servicos();
-                Intent it = new Intent(SelecionarServicoActivity.this, TelaSDataServico.class);
+                Intent it = new Intent(SelecionarServicoActivity.this, DataServicoActivity.class);
                 it.putExtra("endereco", end);
                 it.putExtra("servicos", servs);
                 it.putExtra("limpeza", limpeza);
@@ -108,16 +115,22 @@ public class SelecionarServicoActivity extends AppCompatActivity {
 
     }
     public String servicos(){
-        if (limpeza==1){
-            servs = "Limpeza\n";
-        }
-        if(passarroupa==1){
-            servs += "Passar Roupa\n";
-        }
-        if (lavarroupa==1){
-            servs += "Lavar Roupa";
-        }
-        servs = servs + "\n" + edtoutros.getText().toString();
-        return servs;
+
+        String servico = "";
+
+        if (limpeza == 1)
+            servico += servico.length() == 0 ? "Limpeza" : " | Limpeza";
+
+        if (lavarroupa == 1)
+            servico += servico.length() == 0 ? "Lavar Roupa" : " | Lavar Roupa";
+
+        if (passarroupa == 1)
+            servico += servico.length() == 0 ? "Passar Roupa" : " | Passar Roupa";
+
+        servs = servico;
+        return servico;
+
+
+
     }
 }

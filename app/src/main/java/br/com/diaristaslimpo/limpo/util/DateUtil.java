@@ -20,16 +20,18 @@ public class DateUtil {
     }
 
 
-    public static String dateToString(int year, int monthOfYear, int dayOfMonth) {
+    public static String dateToString(int year, int mes, int dia) {
+        mes++;
+        String mesFormatado = String.valueOf(mes);
+        String diaFormatado = String.valueOf(dia);
 
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(year, monthOfYear, dayOfMonth);
-        Date date = calendar.getTime();
+        if(mes < 10)
+            mesFormatado = "0" + mes;
 
-        DateFormat format = DateFormat.getDateInstance(DateFormat.MEDIUM);
-        String dt = format.format(date);
+        if(dia < 10)
+            diaFormatado = "0" + dia;
 
-        return dt;
+        return diaFormatado + "/" + mesFormatado + "/" + year;
     }
 
     public static String dateToJson(int year, int monthOfYear, int dayOfMonth) {

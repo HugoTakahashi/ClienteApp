@@ -17,12 +17,15 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/logocliente"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="br.com.diaristaslimpo.limpo.activity.LoginActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/SemBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,20 +33,83 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="br.com.diaristaslimpo.limpo.activity.SelecionarEnderecoActivity" />
-        <activity android:name="br.com.diaristaslimpo.limpo.activity.SelecionarServicoActivity" />
-        <activity android:name="br.com.diaristaslimpo.limpo.telas.TelaSDataServico" />
-        <activity android:name="br.com.diaristaslimpo.limpo.telas.TelaSExibeDiarista" />
-        <activity android:name="br.com.diaristaslimpo.limpo.telas.TelaSConfirmacaoServico" />
-        <activity android:name="br.com.diaristaslimpo.limpo.telas.TelaDadosPessoais" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.SelecionarEnderecoActivity"
+            android:label="Escolha um Endereço"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.SelecionarServicoActivity"
+            android:label="Escolha o que precisa"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.DataServicoActivity"
+            android:label="Escolha a Data e Hora"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.ExibeDiaristaActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.ListaDiaristaActivity"
+            android:label="Escolha a(s) Diarista(s)"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.ConfirmacaoServicoActivity"
+            android:label="Confirmação de Diária"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.DadosPessoaisActivity"
+            android:label="Alterar Dados"
+            android:screenOrientation="portrait" />
         <activity
             android:name="br.com.diaristaslimpo.limpo.activity.InicialActivity"
-            android:label="@string/title_activity_tela_inicial"
+            android:label="Limpo!"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="br.com.diaristaslimpo.limpo.activity.FormularioClienteActivity" />
-        <activity android:name="br.com.diaristaslimpo.limpo.telas.TelaCadastroEndereco" />
-        <activity android:name="br.com.diaristaslimpo.limpo.telas.Tela_Historico" />
-
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.FormularioClienteActivity"
+            android:label="Cadastro Básico"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.CadastroEnderecoActivity"
+            android:label="Cadastro de Endereço"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.HistoricoActivity"
+            android:label="Histórico"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.ListaDiariasAgendadasActivity"
+            android:label="Diarias Agendadas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.DetalheDiariaAgendadaActivity"
+            android:label="Diaria Agendada"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.DetalheOrcamentoActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.MeusEnderecosActivity"
+            android:label="Meu(s) Endereço(s)"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.ConfiguracaoActivity"
+            android:label="Configuração"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.ListaHistoricoActivity"
+            android:label="Histórico de Diárias"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.DetalheHistoricoActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.diaristaslimpo.limpo.activity.AvaliacaoActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -51,11 +117,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <activity android:name="br.com.diaristaslimpo.limpo.telas.Tela_DetalheOrcamento" />
-        <activity android:name="br.com.diaristaslimpo.limpo.telas.Tela_MeusEnderecos" />
-        <activity android:name="br.com.diaristaslimpo.limpo.telas.Tela_Configuracao" />
-        <activity android:name="br.com.diaristaslimpo.limpo.telas.ActBaixaDiaristas" />
     </application>
 
 </manifest>

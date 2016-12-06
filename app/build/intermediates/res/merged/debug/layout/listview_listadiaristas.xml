@@ -1,50 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/borda_botao_rosa"
-    android:layout_height="match_parent"
     android:weightSum="1">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-        android:src="@drawable/diarista"
-        android:layout_marginTop="30dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/DiaFoto"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:layout_marginLeft="10dp" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="Victoria Huga"
             android:id="@+id/DiaNome"
             android:textColor="@color/colorAccent"
             android:textSize="20dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="15dp" />
+            android:paddingLeft="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="3,5 KM"
             android:id="@+id/DiaDistancia"
             android:textSize="15dp"
             android:textColor="#000"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="15dp" />
+            android:paddingLeft="10dp" />
 
-        <RatingBar
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/ratingBar"
-            android:numStars="5"
-            android:rating="5"
-            android:visibility="invisible"
-            />
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:id="@+id/DiaNota"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:paddingLeft="10dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star36" />
+
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>

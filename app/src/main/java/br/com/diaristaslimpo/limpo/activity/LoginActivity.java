@@ -29,8 +29,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        helper = new LoginHelper(this);
-
         try {
             dataBase = new DataBase(this);
             conn = dataBase.getWritableDatabase();
@@ -44,26 +42,26 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         }catch (SQLException ex){
-            MessageBox.show(this, "Erro", "Erro ao criar o banco: " + ex.getMessage());
+            MessageBox.show(this, this.getResources().getString(R.string.erro),
+                    this.getResources().getString(R.string.falha_processamento));
         }
 
         findViewById(R.id.login_botao_logar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                helper = new LoginHelper(LoginActivity.this);
                 if(helper.validarCamposObrigatorios()){
-
                     loginTo = helper.getLoginTo();
 
                     if(!ValidationUtil.isValidEmail(loginTo.getEmail())){
-                        MessageBox.showAlert(LoginActivity.this, "E-mail inválido","Escreve o email certo ai");
+                        MessageBox.show(LoginActivity.this,
+                                LoginActivity.this.getResources().getString(R.string.erro),
+                                LoginActivity.this.getResources().getString(R.string.email_invalido));
                         return;
                     }
 
                     String json = helper.getLoginTo().toString();
                     new LoginTask(LoginActivity.this).execute(json);
-                } else {
-
                 }
             }
         });

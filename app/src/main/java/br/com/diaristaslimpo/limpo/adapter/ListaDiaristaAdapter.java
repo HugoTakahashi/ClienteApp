@@ -9,12 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.RatingBar;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import br.com.diaristaslimpo.limpo.model.ListaDiarista;
+import br.com.diaristaslimpo.limpo.to.ListaDiarista;
 import br.com.diaristaslimpo.limpo.R;
 
 public class ListaDiaristaAdapter extends BaseAdapter{
@@ -72,7 +71,7 @@ public class ListaDiaristaAdapter extends BaseAdapter{
         //ao item e definimos as informações.
         ((TextView) view.findViewById(R.id.DiaNome)).setText(item.getNome());
         ((TextView) view.findViewById(R.id.DiaDistancia)).setText( String.valueOf(item.getDistacia() / 1000) + " Km");
-        ((RatingBar) view.findViewById(R.id.ratingBar)).setProgress(item.getRate());
+//        ((RatingBar) view.findViewById(R.id.ratingBar)).setProgress(item.getRate());
 
         return view;
     }

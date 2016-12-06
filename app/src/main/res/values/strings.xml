@@ -4,15 +4,31 @@
 
     <!-- Helper -->
     <string name="campo_obrigatorio">Campo obrigatório</string>
+    <string name="erro">Erro</string>
+    <string name="falha_processamento">Falha no processamento</string>
 
     <!-- Url dos Serviços -->
-    <string name="UrlPrefix">http://limpo-dev.sa-east-1.elasticbeanstalk.com/api/</string>
-    <string name="UrlLoginCliente">Cliente/Login</string>
-    <string name="UrlCadastrarCliente">Cliente/Cadastrar</string>
+    <string name="url_prefix">http://limpo-dev.sa-east-1.elasticbeanstalk.com/api/</string>
+    <string name="UrlLocal">http://localhost:57687/api/</string>
+    <string name="url_login_cliente">Cliente/Login</string>
+    <string name="url_cadastrar_cliente">Cliente/Cadastrar</string>
+    <string name="url_baixa_avaliacao">Solicitacao/BuscarPorSolicitacaoNaoAvaliadaPeloCliente</string>
+    <string name="url_envia_avaliacao">AvaliacaoDiarista/Avaliar</string>
+    <string name="url_lista_diarista_disponiveis">Diarista/ListaDiaristaDisponiveisTeste</string>
+    <string name="url_lista_historico_diaria">Solicitacao/ListaHistoricoDiariasPorCliente</string>
+    <string name="url_lista_diaria_agendada">Solicitacao/ListaDiariasAgendadasPorCliente</string>
+    <string name="url_cadastra_endereco">ClienteEndereco/Cadastrar</string>
+    <string name="url_solicitacao_cancelar">Solicitacao/CancelarPorParteDoCliente</string>
+    <string name="url_cliente_desativar">Cliente/Desativar</string>
+    <string name="url_clienteEndereco_Excluir">ClienteEndereco/Excluir</string>
+
+    <!-- Mensagem -->
+    <string name="mensagem_cancelar_solicitacao">Diária cancelada</string>
+    <string name="email_invalido">"E-mail inválido"</string>
 
     <!-- Chamadas de Web Services -->
-    <string name="Aguarde">Aguarde</string>
-    <string name="EmProcessameto">Em processamento</string>
+    <string name="aguarde">Aguarde</string>
+    <string name="em_processamento">Em processamento</string>
 
     <!-- Strings Tela de Login -->
     <string name="login_email">E-mail</string>
