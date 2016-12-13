@@ -59,6 +59,7 @@ public class ListaDiaristaDisponivelAdapter extends BaseAdapter {
         ((TextView) view.findViewById(R.id.DiaNome)).setText(item.getNome());
         ((TextView) view.findViewById(R.id.DiaDistancia)).setText(item.getDistanciaEmKm());
         ((TextView) view.findViewById(R.id.DiaNota)).setText(item.getRankFormatado());
+        ((TextView) view.findViewById(R.id.DiaNumeroAvaliacoes)).setText(item.getNumeroAvaliacoes());
         String url = "https://s3-sa-east-1.amazonaws.com/arquivo-e-imagens/diarista/"
                 + item.getIdDiarista() + "/foto.jpg";
         new DownloadImageTask((ImageView) view.findViewById(R.id.DiaFoto)).execute(url);

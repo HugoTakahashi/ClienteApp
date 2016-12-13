@@ -28,12 +28,12 @@
         "source": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_close_item_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
         "source": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "C:\\Users\\Hugo\\Desktop\\TCC-App\\Limpo - Cliente\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tela__meus_enderecos.xml",

@@ -16,6 +16,16 @@ public class DiaristaDisponivelTo {
     private String rankFormatado;
     private boolean itemSelecionado;
 
+    public String getNumeroAvaliacoes() {
+        return numeroAvaliacoes;
+    }
+
+    public void setNumeroAvaliacoes(String numeroAvaliacoes) {
+        this.numeroAvaliacoes = numeroAvaliacoes;
+    }
+
+    private String numeroAvaliacoes;
+
     public boolean isItemSelecionado() {
         return itemSelecionado;
     }
@@ -89,6 +99,7 @@ public class DiaristaDisponivelTo {
             to.setDistanciaEmKm((String) json.get("DistanciaEmKm"));
             to.setRankFormatado((String) json.get("RankFormatado"));
             to.setRank((Double) json.get("Rank"));
+            to.setNumeroAvaliacoes((String) json.get("NumeroAvaliacoes"));
 
         } catch(Exception ex) {
             ex.getMessage();
